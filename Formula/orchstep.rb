@@ -5,21 +5,21 @@
 class Orchstep < Formula
   desc "YAML-first workflow orchestration engine"
   homepage "https://orchstep.dev"
-  version "0.6.0"
+  version "0.6.1"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/orchstep/orchstep/releases/download/v0.6.0/orchstep_0.6.0_darwin_amd64.tar.gz"
-      sha256 "60acf9b3a9ece780d487d76acadef04056b5af20fdd54de8fa0117bfb9e63f82"
+      url "https://github.com/orchstep/orchstep/releases/download/v0.6.1/orchstep_0.6.1_darwin_amd64.tar.gz"
+      sha256 "05e5dcb543a83dd9fbdd8cc8d4eb421a9b8cd7ce42d8695a3c4ac4db1db87524"
 
       define_method(:install) do
         bin.install "orchstep"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/orchstep/orchstep/releases/download/v0.6.0/orchstep_0.6.0_darwin_arm64.tar.gz"
-      sha256 "977b139c7fe258b4de35ee880692b37b0342362470d212912ec39e25ab9a1b45"
+      url "https://github.com/orchstep/orchstep/releases/download/v0.6.1/orchstep_0.6.1_darwin_arm64.tar.gz"
+      sha256 "5312e33ffa2ff140c7d8cbc4f20ab192d49d660326aed5ed47559dd7b03ce6e0"
 
       define_method(:install) do
         bin.install "orchstep"
@@ -29,15 +29,15 @@ class Orchstep < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/orchstep/orchstep/releases/download/v0.6.0/orchstep_0.6.0_linux_amd64.tar.gz"
-      sha256 "9999722fdefcab445487e4903dba9e3ffcc7bb6803bb6bcd2a6ebf55ad58cbac"
+      url "https://github.com/orchstep/orchstep/releases/download/v0.6.1/orchstep_0.6.1_linux_amd64.tar.gz"
+      sha256 "4b864a88231e3d36144a25d41f65941369339fc6e2fa7a094693ab51368e3b03"
       define_method(:install) do
         bin.install "orchstep"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/orchstep/orchstep/releases/download/v0.6.0/orchstep_0.6.0_linux_arm64.tar.gz"
-      sha256 "c0a084eb86499d309eb984d02b407001ed2af46b8202b04b844ed38c3d57b6cc"
+      url "https://github.com/orchstep/orchstep/releases/download/v0.6.1/orchstep_0.6.1_linux_arm64.tar.gz"
+      sha256 "966124394507621ff11f50055fb4a76a2196ad1698386a80be617274bcf70e84"
       define_method(:install) do
         bin.install "orchstep"
       end
